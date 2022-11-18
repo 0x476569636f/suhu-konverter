@@ -40,7 +40,7 @@ def rumus():
     outText.set(tot)
 
 win = tk.Tk()
-win.geometry('400x300')
+win.geometry('350x200')
 win.title('Konverter Suhu Menggunkan Gui')
 
 variable = tk.StringVar(win)
