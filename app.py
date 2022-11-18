@@ -42,7 +42,6 @@ def rumus():
 win = tk.Tk()
 win.geometry('400x300')
 win.title('Konverter Suhu Menggunkan Gui')
-win.configure(bg='yellow')
 
 variable = tk.StringVar(win)
 variable.set(option1[0])
