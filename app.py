@@ -1,7 +1,7 @@
 import tkinter as tk
 
-option1 = ["celcius", "fahrenheit", "kelvin"]
-option2 = ["celcius", "fahrenheit", "kelvin"]
+option1 = ["celcius", "fahrenheit", "reamur", "kelvin"]
+option2 = ["celcius", "fahrenheit", "reamur", "kelvin"]
 
 def rumus():
     dar = variable.get()
@@ -10,18 +10,31 @@ def rumus():
     if (dar == ke):
         tot = jawab
     elif (dar == "celcius"):
-        if ke =='fahrenheit':
+        if ke == 'fahrenheit':
             tot = (jawab * 9/5) + 32
+        elif ke == 'reamur':
+            tot = (jawab * 4/5)
         else:
             tot = jawab + 273.15
     elif (dar == "fahrenheit"):
         if ke ==  'celcius':
             tot = (jawab - 32) * 5/9
+        elif ke == 'reamur':
+            tot = (jawab - 32) * 4/9
         else:
             tot =(jawab - 32) * 5/9 + 273.15
+    elif (dar == "reamur"):
+        if ke == 'celcius':
+            tot = (jawab * 5/4)
+        elif ke == 'fahrenheit':
+            tot = (jawab * 9/4) + 32
+        else:
+            tot = (jawab * 5/4) + 273.15
     elif (dar == "kelvin"):
         if ke == 'fahrenheit':
             tot = (jawab - 273.15) * 9/5 + 32
+        elif ke == 'reamur':
+            tot = (jawab - 273.15) * 4/5
         else:
             tot = jawab - 273.15
     outText.set(tot)
