@@ -1,1 +1,1 @@
-# Gui Temperature Converter build with python Tkinter
+# Gui Temperature Converter || python Tkinter
